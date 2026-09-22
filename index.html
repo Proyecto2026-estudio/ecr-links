@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estudio Casil Rodríguez · Enlaces</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📒</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f3f1ec;
+    --ink: #16161a;
+    --ink-soft: #4a5161;
+    --muted: #8a8576;
+    --line: #d4cdb9;
+    --gold: #b08d3c;
+    --gold-deep: #8f7130;
+    --card: #ffffff;
+    --shadow: 0 1px 2px rgba(22,22,26,.05), 0 8px 22px rgba(22,22,26,.06);
+  }
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --paper: #17171b; --ink: #ece7db; --ink-soft: #b7b2a3; --muted: #8e8a7c;
+      --line: #37342a; --gold: #c9a24a; --gold-deep: #dab35d; --card: #1d1d22;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #17171b; --ink: #ece7db; --ink-soft: #b7b2a3; --muted: #8e8a7c;
+    --line: #37342a; --gold: #c9a24a; --gold-deep: #dab35d; --card: #1d1d22;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.3);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--paper); color: var(--ink);
+    font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased;
+    padding: calc(env(safe-area-inset-top, 0px) + 3.2rem) 1.4rem calc(env(safe-area-inset-bottom, 0px) + 2.5rem);
+    display: flex; justify-content: center;
+  }
+  .wrap { width: 100%; max-width: 420px; }
+
+  .id { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 2.1rem; }
+  .mark {
+    width: 62px; height: 62px; border: 1.5px solid var(--gold); border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Lora', serif; font-weight: 700; font-size: 1.6rem; color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  h1 { font-family: 'Lora', serif; font-weight: 600; font-size: 1.35rem; margin: 0; letter-spacing: -0.01em; }
+  .id p { margin: 0.4rem 0 0; font-size: 0.83rem; color: var(--muted); }
+
+  .links { display: flex; flex-direction: column; gap: 0.7rem; }
+  .lnk {
+    display: flex; align-items: center; gap: 0.85rem;
+    background: var(--card); border: 1px solid var(--line); border-radius: 7px;
+    padding: 0.95rem 1.1rem; text-decoration: none; color: var(--ink);
+    box-shadow: var(--shadow); transition: border-color .15s, transform .15s;
+  }
+  .lnk:hover { border-color: var(--gold); transform: translateY(-1px); }
+  .lnk .ic { width: 22px; flex-shrink: 0; text-align: center; font-size: 1.05rem; color: var(--gold-deep); }
+  .lnk .tx { flex: 1; min-width: 0; }
+  .lnk .tx b { display: block; font-family: 'Lora', serif; font-weight: 600; font-size: 0.95rem; }
+  .lnk .tx span { display: block; font-size: 0.74rem; color: var(--muted); margin-top: 0.1rem; }
+  .lnk .go { color: var(--muted); font-size: 0.9rem; }
+
+  footer { text-align: center; margin-top: 2.4rem; font-size: 0.72rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="id">
+    <div class="mark">CR</div>
+    <h1>Estudio Casil Rodríguez</h1>
+    <p>Contador público · Tres de Febrero</p>
+  </div>
+
+  <div class="links">
+    <a class="lnk" href="https://ecr-landing-page.up.railway.app" target="_blank" rel="noopener">
+      <span class="ic">◆</span>
+      <span class="tx"><b>Landing page</b><span>Presentación del estudio</span></span>
+      <span class="go">→</span>
+    </a>
+    <a class="lnk" href="https://ecr-sistema.up.railway.app" target="_blank" rel="noopener">
+      <span class="ic">▤</span>
+      <span class="tx"><b>Host Online</b><span>Sistema de gestión contable</span></span>
+      <span class="go">→</span>
+    </a>
+    <a class="lnk" href="https://proyecto2026-estudio.github.io/Documentacion/?v=3" target="_blank" rel="noopener">
+      <span class="ic">▭</span>
+      <span class="tx"><b>Documentación</b><span>Detalle técnico del proyecto</span></span>
+      <span class="go">→</span>
+    </a>
+    <a class="lnk" href="https://proyecto2026-estudio.github.io/DocumentacionEC/Manual_Uso_ECR.pdf" target="_blank" rel="noopener">
+      <span class="ic">▥</span>
+      <span class="tx"><b>Manual de Usuario</b><span>Guía paso a paso del sistema (PDF)</span></span>
+      <span class="go">→</span>
+    </a>
+    <a class="lnk" href="https://github.com/Proyecto2026-estudio/ECR-SISTEMA" target="_blank" rel="noopener">
+      <span class="ic">⌥</span>
+      <span class="tx"><b>Repositorio en GitHub</b><span>Código fuente del sistema</span></span>
+      <span class="go">→</span>
+    </a>
+    <a class="lnk" href="https://docs.google.com/spreadsheets/d/1e3FPGFA64X4wJyJTvTxDdx9xwOmMHet4JmclXT2cDmk/edit?gid=1902926627#gid=1902926627" target="_blank" rel="noopener">
+      <span class="ic">▦</span>
+      <span class="tx"><b>Carta Gantt</b><span>Planificación del proyecto</span></span>
+      <span class="go">→</span>
+    </a>
+    <a class="lnk" href="https://proyecto2026-estudio.github.io/Documentacion/?v=3#faq" target="_blank" rel="noopener">
+      <span class="ic">?</span>
+      <span class="tx"><b>FAQ</b><span>Preguntas frecuentes</span></span>
+      <span class="go">→</span>
+    </a>
+    <a class="lnk" href="https://proyecto2026-estudio.github.io/Documentacion/?v=3#quickstart" target="_blank" rel="noopener">
+      <span class="ic">▸</span>
+      <span class="tx"><b>Guía de inicio rápido</b><span>Primeros pasos con el sistema</span></span>
+      <span class="go">→</span>
+    </a>
+  </div>
+
+  <footer>Estudio Casil Rodríguez · Gabriel Eduardo Casil</footer>
+
+</div>
+</body>
+</html>
