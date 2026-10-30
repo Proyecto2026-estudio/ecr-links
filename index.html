@@ -18,8 +18,8 @@
     --card: #ffffff;
     --shadow: 0 1px 2px rgba(22,22,26,.05), 0 8px 22px rgba(22,22,26,.06);
   }
-  :root:not([data-theme="light"]) {
-    @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
       --paper: #17171b; --ink: #ece7db; --ink-soft: #b7b2a3; --muted: #8e8a7c;
       --line: #37342a; --gold: #c9a24a; --gold-deep: #dab35d; --card: #1d1d22;
       --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.3);
@@ -40,12 +40,11 @@
   .wrap { width: 100%; max-width: 420px; }
 
   .id { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 2.1rem; }
-  .mark {
-    width: 62px; height: 62px; border: 1.5px solid var(--gold); border-radius: 4px;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Lora', serif; font-weight: 700; font-size: 1.6rem; color: var(--gold);
-    margin-bottom: 1rem;
-  }
+  .logo { width: min(260px, 72%); height: auto; display: block; margin-bottom: 1.2rem; }
+  .logo-d { display: none; }
+  .logo-l { mix-blend-mode: multiply; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-l { display: none; } :root:not([data-theme="light"]) .logo-d { display: block; } }
+  :root[data-theme="dark"] .logo-l { display: none; } :root[data-theme="dark"] .logo-d { display: block; }
   h1 { font-family: 'Lora', serif; font-weight: 600; font-size: 1.35rem; margin: 0; letter-spacing: -0.01em; }
   .id p { margin: 0.4rem 0 0; font-size: 0.83rem; color: var(--muted); }
 
@@ -70,9 +69,9 @@
 <div class="wrap">
 
   <div class="id">
-    <div class="mark">CR</div>
+    <img class="logo logo-l" src="/logo.png" alt="ECR · Estudio Casil Rodríguez · 50 años"><img class="logo logo-d" src="/logo-oscuro.png" alt="" aria-hidden="true">
     <h1>Estudio Casil Rodríguez</h1>
-    <p>Contador público · Tres de Febrero</p>
+    <p>Contador público · San Martín</p>
   </div>
 
   <div class="links">
